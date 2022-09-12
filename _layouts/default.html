@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>{{ site.title }}</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS Main  -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css" />
+  </head>
+  <body>
+    <div id="fullscreen-menu" class="nav-hamburger-fullscreen">
+      <a href="{{'.' | relative_url}}"><h2>Index</h2></a>
+      <a href="{{'get-started' | relative_url}}"><h2>Get Started</h2></a>
+      <a href="{{'download' | relative_url}}"><h2>Download</h2></a>
+      <a href="{{'community' | relative_url}}"><h2>Community</h2></a>
+      <a href="{{'fund' | relative_url}}"><h2>Funding</h2></a>
+      <a href="{{'open-research-problems' | relative_url}}"><h2>Research</h2></a>
+      <a href="{{'blog' | relative_url}}"><h2>Blog</h2></a>
+      <a href="https://docs.mugle.org"><h2>Docs</h2></a>
+      <a href="https://github.com/mugleproject/mugle"><h2>GitHub</h2></a>
+    </div>
+    <div class="full-header">
+      <div class="full-nav">
+        <a href="/" id="mugle-logo-full">
+          <svg id="mugle-logo-full-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none" >
+            <g transform="translate(0.000000,61.000000) scale(0.100000,-0.100000)" fill="#fbcb83" stroke="none">
+              <path d="M280 554 c-52 -5 -100 -24 -140 -57 -48 -38 -80 -93 -90 -155 -3 -20 -3 -54 0 -74 13 -81 64 -149 138 -186 37 -18 75 -27 117 -27 50 0 97 13 140 39 53 32 95 88 111 149 11 42 11 81 0 124 -10 41 -33 80 -65 112 -39 39 -92 65 -149 73 -16 2 -46 3 -62 1z m150 -141 c36 -7 66 -35 75 -70 9 -35 -1 -72 -27 -97 -13 -12 -28 -20 -45 -24 -11 -2 -33 -2 -44 0 -31 8 -57 31 -68 61 -2 6 -5 19 -5 26 l-0 4 -9 0 -9 0 0 -7 c-3 -33 -27 -66 -58 -79 -14 -6 -21 -7 -38 -7 -18 0 -26 1 -42 8 -28 13 -47 38 -54 71 -1 7 -1 28 0 36 10 49 52 82 101 80 24 -1 45 -10 62 -26 15 -14 22 -27 29 -50 0 0 4 0 11 0 l10 0 1 6 c5 23 24 47 46 59 19 10 44 14 66 10z"/>
+              <path d="M394 389 c-32 -8 -55 -38 -55 -73 0 -44 35 -78 77 -75 17 1 31 7 44 21 7 7 9 10 13 18 6 13 8 20 8 35 0 15 -1 21 -7 35 -15 30 -48 46 -80 38z"/>
+              <path d="M189 390 c-1 0 -4 0 -7 -1 -3 0 -9 -3 -15 -5 -8 -3 -10 -5 -18 -13 -7 -7 -9 -10 -13 -18 -6 -13 -8 -19 -8 -36 0 -15 1 -22 8 -36 5 -11 19 -24 30 -30 12 -6 18 -7 32 -7 14 0 20 1 32 7 6 3 10 6 17 13 7 7 9 10 13 18 6 13 8 19 8 35 0 15 -2 24 -8 36 -6 11 -19 24 -30 30 -4 2 -11 4 -14 5 -5 1 -22 2 -26 19z"/>
+            </g>
+            <g transform="translate(0.000000,61.000000) scale(0.100000,-0.100000)" fill="#7c4c05" stroke="none">
+              <path d="M394 413 c-13 -3 -16 -4 -26 -8 -10 -5 -18 -11 -27 -19 -11 -12 -19 -24 -23 -41 l-2 -7 -10 0 -10 0 -2 8 c-3 10 -8 21 -14 29 -4 6 -16 18 -23 23 -7 5 -22 11 -32 14 -12 3 -33 3 -45 0 -10 -2 -25 -9 -34 -15 -11 -8 -24 -23 -30 -36 -5 -11 -10 -31 -10 -44 0 -11 4 -31 10 -43 10 -21 29 -38 50 -47 12 -5 32 -9 39 -8 30 3 50 12 68 32 14 15 24 35 26 56 l0 7 9 0 9 0 0 -7 c3 -35 27 -66 60 -80 13 -5 20 -6 36 -6 12 0 16 0 22 2 41 11 69 42 74 86 3 25 -7 57 -27 77 -13 13 -29 23 -49 27 -15 3 -24 3 -37 0z m32 -23 c21 -5 37 -18 47 -38 6 -13 7 -19 7 -35 0 -15 -1 -21 -8 -35 -8 -17 -26 -32 -44 -37 -13 -3 -31 -3 -43 2 -28 11 -47 38 -47 70 0 35 22 64 55 73 10 2 23 2 33 0z m-211 -1 c3 0 9 -3 14 -5 11 -5 24 -18 30 -30 6 -12 8 -21 8 -37 0 -15 -1 -21 -8 -35 -4 -7 -6 -10 -13 -18 -13 -13 -26 -19 -44 -21 -33 -2 -63 19 -74 53 -1 6 -2 9 -2 21 0 16 1 22 8 36 3 8 6 10 13 18 7 7 10 9 18 13 5 2 12 5 15 5 3 0 6 1 7 1 3 0 20 0 26 -1z"/>
+            </g>
+          </svg>   
+        </a>
+      </div>
+    </div>
+    <header>
+      {% include navigation.html %}
+    </header>
+    {{ content }}
+    {% include footer.html %}
+    <script type="text/javascript">
+      var logo = document.getElementById('mugle-logo-bare');
+      var fullLogo = document.getElementById('mugle-logo-full-svg');
+      logo.addEventListener('mouseover', () => {
+        document.getElementById('mugle-logo-full').style.opacity = '1';
+      });
+      logo.addEventListener('mouseout', () => {
+        document.getElementById('mugle-logo-full').style.opacity = '0';
+      });
+      window.addEventListener('scroll', () => {
+        logo.style.transform = `rotate(${window.scrollY / 3}deg)`;
+        fullLogo.style.transform = `rotate(${window.scrollY / 3}deg)`;
+      });
+    </script>
+    <script type="text/javascript">
+      var hamburger = document.getElementById('hamburger');
+      var fullscreen = document.getElementById('fullscreen-menu');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        fullscreen.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

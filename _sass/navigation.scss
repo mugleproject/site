@@ -1,0 +1,149 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  a {
+    font-family: 'Courier', monospace;
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    border: 0;
+  }
+}
+nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin: 24px 16px 0 16px;
+}
+.nav-logo {
+  flex-grow: 1;
+  &:hover ~ #mugle-logo-full {
+    visibility: visible;
+  }
+}
+.full-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  max-width: 1140px;
+  margin: 0 auto;
+  z-index: 100000;
+  pointer-events: none;
+}
+.full-nav {
+  margin: 24px 16px 0 16px;
+}
+#mugle-logo {
+  display: inline-block;
+  position: relative;
+}
+#mugle-logo-bare {
+  transition: all .1s ease;
+  transform: rotate(0deg);
+}
+#mugle-logo-full {
+  display: inline-block;
+  border: 0;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+  }
+}
+#mugle-logo-full-svg {
+  transition: all .1s ease;
+  transform: rotate(0deg);
+}
+.nav-list {
+  display: flex;
+  margin: 12px 0 0 0;
+  li {
+    margin-right: 24px;
+  }
+}
+.nav-hamburger {
+  display: none;
+  &.active {
+    .nav-hamburger-line.first {
+      transform: translateY(6px) rotate(45deg);
+    }
+    .nav-hamburger-line.second {
+      transform: translateY(-2px) rotate(-45deg);
+    }
+  }
+}
+.nav-hamburger-btn {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  padding: 16px;
+  outline: 0;
+}
+.nav-hamburger-line {
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  transform: rotate(0deg);
+  transition: all .25s;
+}
+.nav-hamburger-fullscreen {
+  display: none;
+  opacity: 0;
+  background-color: white;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  overflow: hidden;
+  transition: opacity .25s;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  padding: 128px 24px 0 24px;
+  a {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  h2 {
+    margin: 12px 0;
+    font-size: 28px;
+  }
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: 100%;
+  }
+  nav {
+    margin: 16px;
+  }
+  .full-nav {
+    margin: 16px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-hamburger {
+    display: block;
+  }
+  .nav-hamburger-fullscreen {
+    display: flex;
+    z-index: 30;
+  }
+}

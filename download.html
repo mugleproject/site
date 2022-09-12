@@ -1,0 +1,128 @@
+---
+layout: default
+---
+<script type="text/javascript" src="/assets/js/download.js"></script>
+<main class="site pad">
+  <div class="download">
+    <div class="download-heading">
+      <h2>Download</h2>
+      <div class="download-subheading">
+        Please note that mugle and mugle-wallet come without a graphical user interface (GUI).<br>
+        For GUI wallet and node see the community projects below.
+      </div>
+    </div>
+    <div class="download-quickstart">
+      <a href="https://docs.mugle.org/getting-started/quickstart/install/">Quickstart↗</a>
+    </div>
+    <section class="download-section">
+      <!-- Tab links -->
+      <div class="tab-container">
+        <div class="tab">
+          <button class="tablinks" onclick="openDownloadTab(event, 'Windows')" id="windows">Windows</button>
+          <button class="tablinks" onclick="openDownloadTab(event, 'macOS')" id="macos">macOS</button>
+          <button class="tablinks" onclick="openDownloadTab(event, 'Linux')" id="linux">Linux</button>
+        </div>
+      </div>
+      <!-- Tab content -->
+      <div id="Windows" class="tabcontent">
+        <h3><a
+            href="https://github.com/mugleproject/mugle-wallet/releases/download/v5.1.0-alpha.2/mugle-wallet-v5.1.0-alpha.2-win-x64.zip">mugle-wallet
+            5.1.0-alpha.2</a></h3>
+        <div class="codebox-heading">SHA256 HASH:</div>
+        <div class="codebox">
+          97CF851C947F1C5F3DC5E78E3756B55CBB27E1DC9EA658C36A4F536B37510A50
+        </div>
+        <h3> <a href="https://github.com/mugleproject/mugle/releases/download/v5.2.0-alpha.5/mugle-v5.2.0-alpha.5-win-x64.zip">mugle
+          v5.2.0-alpha.5</a></h3>
+        <div class="codebox-heading">SHA256 HASH:</div>
+        <div class="codebox">
+          D3480F049D74557415EF6854D831EC07C653502C793C2CB6BBCE51EDAA167C90
+        </div>
+      </div>
+
+      <div id="macOS" class="tabcontent">
+        <h3><a
+            href="https://github.com/mugleproject/mugle-wallet/releases/download/v5.1.0-alpha.2/mugle-wallet-v5.1.0-alpha.2-macos.zip">mugle-wallet
+            v5.1.0-alpha.2</a></h3>
+        <div class="codebox-heading">SHA256 HASH:</div>
+        <div class="codebox">
+          8139e8a74ef8dc52ff759566917219dc26fd4eba7f5e182ce20adf1b7216557e
+        </div>
+        <div class="codebox-heading">or with homebrew</div>
+        <div class="codebox">
+          brew install mugle-wallet
+        </div>
+        <h3><a href="https://github.com/mugleproject/mugle/releases/download/v5.2.0-alpha.5/mugle-5.2.0-alpha.5-macos.zip">mugle
+          v5.2.0-alpha.5</a></h3>
+        <div class="codebox-heading">SHA256 HASH:</div>
+        <div class="codebox">
+          5dc8895554f1a65e2b782e8548fb08418cbad6b0de5bcc78f1ace740bd651cac
+        </div>
+        <div class="codebox-heading">or with homebrew</div>
+        <div class="codebox">
+          brew install mugle
+        </div>
+      </div>
+
+      <div id="Linux" class="tabcontent">
+        <h3> <a
+            href="https://github.com/mugleproject/mugle-wallet/releases/download/v5.1.0-alpha.2/mugle-wallet-v5.1.0-alpha.2-linux-amd64.zip">mugle-wallet
+            v5.1.0-alpha.2</a></h3>
+        <div class="codebox-heading">SHA256 HASH:</div>
+        <div class="codebox">
+          4dd24a03be40e91cefdeb2d95a01e009d1b2b1a473beab6a50281fcbfa576f72
+        </div>
+        <h3> <a href="https://github.com/mugleproject/mugle/releases/download/v5.2.0-alpha.5/mugle-v5.2.0-alpha.5-linux-amd64.zip">mugle
+          v5.2.0-alpha.5</a></h3>
+        <div class="codebox-heading">SHA256 HASH:</div>
+        <div class="codebox">
+          35de24bb2c1bc6fd250ab57bad3a4740177209cbc2bbd1ca3db8abf216e37705
+        </div>
+	<div class="codebox-heading">or using <a href="https://snapcraft.io/mugle">snap</a> install mugle and mugle-wallet with one command</div>
+        <div class="codebox">
+          snap install mugle
+	</div>
+      </div>
+    </section>
+  </div>
+</main>
+<section class="site pad grey community-pad">
+  <div class="community">
+    <h2>Community Projects</h2>
+    <div class="community-subheading">
+      We only list community projects, use at your own risk.
+    </div>
+    <div class="community-content">
+      <div class="community-row">
+        <a href="https://github.com/muglefans/Thestral/releases" target="_blank"><img class="community-row-img"
+            alt="Thestral" src="assets/images/thestral.png" /></a>
+        <div class="community-row-content">
+          <div class="community-row-heading"><a href="https://github.com/muglefans/Thestral/releases"
+              target="_blank">Thestral</a></div>
+          <div class="community-row-desc">Mugle GUI node and wallet.</div>
+          <div class="community-row-category">Windows, Linux and macOS</div>
+        </div>
+      </div>
+      <!--<div class="community-row">
+        <a href="https://mugleplusplus.github.io" target="_blank"><img class="community-row-img"
+            alt="Mugle++" src="assets/images/gpp.svg" /></a>
+        <div class="community-row-content">
+          <div class="community-row-heading"><a href="https://mugleplusplus.github.io" target="_blank">
+              Mugle++</a></div>
+          <div class="community-row-desc">Mugle GUI node and wallet written in C++.</div>
+          <div class="community-row-category">Windows, Linux, macOS, and Android</div>
+        </div>
+      </div>
+      <div class="community-row">
+        <a href="https://ironbelly.app" target="_blank"><img class="community-row-img"
+            alt="Ironbelly" src="assets/images/ironbelly.png" /></a>
+        <div class="community-row-content">
+          <div class="community-row-heading"><a href="https://ironbelly.app" target="_blank">
+              Ironbelly</a></div>
+          <div class="community-row-desc">Mugle mobile wallet you’ve deserved.</div>
+          <div class="community-row-category">iOS and Android app</div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</section>
